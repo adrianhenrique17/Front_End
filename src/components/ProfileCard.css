@@ -1,0 +1,68 @@
+.card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.descricao {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .foto {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .descricao {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .foto {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .descricao {
+    font-size: 0.8rem;
+  }
+}
