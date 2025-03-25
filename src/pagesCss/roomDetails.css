@@ -1,0 +1,40 @@
+.Room-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+  color: white;
+  font-family: "Poppins", "Arial", sans-serif;
+  background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.Room-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 80% 20%,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 30%
+  );
+  z-index: 0;
+}
+
+.Room-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to right, #ffffff, #f9f9f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: fadeInDown 1s ease-out;
+}
